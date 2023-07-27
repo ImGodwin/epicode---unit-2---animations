@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400&family=Shadows+Into+Light&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+.main-container {
+  min-height: 500px;
+  min-width: 300px;
+  background-color: rgb(93, 93, 92);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 10px;
+  padding: 20px;
+}
+
+.card {
+  background-color: rgb(252, 250, 199);
+  width: 22%;
+  padding: 2.5rem;
+}
+
+h2 {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+p {
+  font-family: "Shadows Into Light", cursive;
+}
+
+.card,
+#card1,
+#card5,
+#card7 {
+  box-shadow: 0 2px 2px 0;
+}
+
+#card2,
+#card4,
+#card8 {
+  background-color: rgb(165, 190, 152);
+  box-shadow: 0 2px 2px 0;
+}
+
+#card3,
+#card6 {
+  background-color: rgb(131, 122, 151);
+  box-shadow: 0 2px 2px 0;
+}
+
+.card1 {
+  transform: rotate(355deg);
+}
+
+.card1:hover {
+  width: 100px;
+}
+
+#card2 {
+  transform: rotate(4deg);
+}
+
+#card3 {
+  transform: rotate(356deg);
+}
+
+#card4 {
+  transform: rotate(7deg);
+}
+
+#card5 {
+  transform: rotate(355deg);
+}
+
+#card6 {
+  transform: rotate(358deg);
+}
+
+#card7 {
+  transform: rotate(355deg);
+}
+
+#card8 {
+  transform: rotate(4deg);
+}
+
+/* hover  */
+.card:hover,
+#card1:hover,
+#card5:hover,
+#card7:hover {
+  animation: cards-hover 0.5s both;
+}
+
+#card2:hover,
+#card4:hover,
+#card8:hover {
+  animation: cards-hover 0.5s both;
+}
+
+#card3:hover,
+#card6:hover {
+  animation: cards-hover 0.5s both;
+}
+
+@keyframes cards-hover {
+}
