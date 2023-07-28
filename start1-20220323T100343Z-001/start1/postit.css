@@ -23,6 +23,7 @@ body {
   background-color: rgb(252, 250, 199);
   width: 22%;
   padding: 2.5rem;
+  transition: transform 0.5s;
 }
 
 h2 {
@@ -56,11 +57,7 @@ p {
 }
 
 .card1 {
-  transform: rotate(355deg);
-}
-
-.card1:hover {
-  width: 100px;
+  /* transform: rotate(355deg); */
 }
 
 #card2 {
@@ -92,23 +89,6 @@ p {
 }
 
 /* hover  */
-.card:hover,
-#card1:hover,
-#card5:hover,
-#card7:hover {
-  animation: cards-hover 0.5s both;
-}
-
-#card2:hover,
-#card4:hover,
-#card8:hover {
-  animation: cards-hover 0.5s both;
-}
-
-#card3:hover,
-#card6:hover {
-  animation: cards-hover 0.5s both;
-}
-
-@keyframes cards-hover {
+.card:hover {
+  scale: 1.3;
 }
